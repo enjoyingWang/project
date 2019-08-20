@@ -1,7 +1,11 @@
 package org.hzero.order.app.service.impl;
 
 import org.hzero.order.app.service.CustomerService;
+import org.hzero.order.domain.entity.Customer;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
+
 /**
  * 客户应用服务默认实现
  *
@@ -10,4 +14,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class CustomerServiceImpl implements CustomerService {
 
+    @Override
+    public List<Customer> listCustomer() {
+        return null;
+    }
+
+    @Override
+    public int insertCustomer(Customer customer) {
+        return 0;
+    }
 }
